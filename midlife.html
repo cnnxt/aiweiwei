@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI WEIWEI | midlife works</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+    .container, .main, nav {
+        width: 100%; 
+    }
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav role="navigation">
+		<ul>
+			<li><a href="/index.html">home</a></li>
+			<li><a href="/earlylife.html">early life</a></li>
+			<li><a href="#"><u>midlife</u></a></li>
+			<li><a href="/laterlife.html">later life</a></li>
+		</ul>
+	</nav>
+
+		<div class="banner">
+			<div class="image-grid">
+				<img src="/works/mid/1995_cokeonvase.jpg" alt="1995, coke on han dynasty vase" class="grid-item">
+				<img src="/works/mid/1995_middlefingerwhitehouse.jpg" alt="1995, middle finger in front of the white house" class="grid-item">
+				<img src="/works/mid/1995_urndrop.jpeg" alt="1995, urn drop" class="grid-item">
+				<img src="/works/mid/2004_mapofchina.jpg" alt="2004, map of china" class="grid-item">
+				<img src="/works/mid/2005_thewave.jpg" alt="2005, the wave" class="grid-item">
+				<img src="/works/mid/2006_coloredvases.jpg" alt="2006, vases dipped in paint" class="grid-item">
+				<img src="/works/mid/2009_irontrees.jpg" alt="2009, iron trees" class="grid-item">
+			</div>
+		</div>
+	
+		<div id="lightbox" class="lightbox">
+			<span class="close">&times;</span>
+			<img class="lightbox-content" id="lightbox-img">
+			<span class="nav-icon left"><</span>
+			<span class="nav-icon right">></span>
+		</div>
+	
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const lightbox = document.getElementById('lightbox');
+				const lightboxImg = document.getElementById('lightbox-img');
+				const close = document.querySelector('.close');
+				const prev = document.querySelector('.nav-icon.left');
+				const next = document.querySelector('.nav-icon.right');
+				const images = document.querySelectorAll('.grid-item');
+				let currentIndex = 0;
+	
+				const showImage = (index) => {
+					lightboxImg.src = images[index].src;
+					currentIndex = index;
+				};
+	
+				images.forEach((image, index) => {
+					image.addEventListener('click', function () {
+						lightbox.style.display = 'block';
+						showImage(index);
+					});
+				});
+	
+				close.addEventListener('click', function () {
+					lightbox.style.display = 'none';
+				});
+	
+				lightbox.addEventListener('click', function (event) {
+					if (event.target === lightbox) {
+						lightbox.style.display = 'none';
+					}
+				});
+	
+				prev.addEventListener('click', function () {
+					currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+					showImage(currentIndex);
+				});
+	
+				next.addEventListener('click', function () {
+					currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+					showImage(currentIndex);
+				});
+			});
+		</script>
+		<div class="footer">
+			site in reference to ai weiwei, 1957 - present
+			<br>
+			by connie tu
+			</div>
+	</body>
+	</html>
+	
