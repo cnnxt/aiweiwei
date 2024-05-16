@@ -1,1 +1,8 @@
-theme: jekyll-theme-minimal
+locale                   : "en-US"
+title                    : "Ai Wei Wei"
+title_separator          : "-"
+name                     : "Connie Tu"
+description              : &description "personal description"
+url                      : https://cnnxt.github.io
+baseurl                  : /aiweiwei
+repository               : "cnnxt/aiweiwei"
