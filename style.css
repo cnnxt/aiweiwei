@@ -187,8 +187,8 @@ body {
 }
 
 .grid-item {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.7s;
