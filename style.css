@@ -1,25 +1,25 @@
 @font-face {
     font-family: "tesseractdisplay-bold";
-    src: url("/fonts/tesseractdisplay-bold-TRIAL.otf") format("embedded-opentype"),
-        url("/fonts/tesseractdisplayweb-bold-TRIAL.woff") format("woff");
+    src: url("fonts/tesseractdisplay-bold-TRIAL.otf") format("embedded-opentype"),
+        url("fonts/tesseractdisplayweb-bold-TRIAL.woff") format("woff");
 }
 
 @font-face {
     font-family: "tesseractdisplay-regular";
-    src: url("/fonts/tesseractdisplay-regular-TRIAL.otf") format("embedded-opentype"),
-        url("/fonts/tesseractdisplayweb-regular-TRIAL.woff") format("woff");
+    src: url("fonts/tesseractdisplay-regular-TRIAL.otf") format("embedded-opentype"),
+        url("fonts/tesseractdisplayweb-regular-TRIAL.woff") format("woff");
 }
 
 @font-face {
     font-family: "protogrotesk-regular";
-    src: url("/fonts/protogrotesk-regular-TRIAL.otf") format("embedded-opentype"),
-        url("/fonts/protogroteskweb-regular-TRIAL.woff") format("woff");
+    src: url("fonts/protogrotesk-regular-TRIAL.otf") format("embedded-opentype"),
+        url("fonts/protogroteskweb-regular-TRIAL.woff") format("woff");
 }
 
 @font-face {
     font-family: "protogrotesk-light";
-    src: url("/fonts/protogrotesk-light-TRIAL.otf") format("embedded-opentype"),
-        url("/fonts/protogroteskweb-light-TRIAL.woff") format("woff");
+    src: url("fonts/protogrotesk-light-TRIAL.otf") format("embedded-opentype"),
+        url("fonts/protogroteskweb-light-TRIAL.woff") format("woff");
 }
 
 nav {
